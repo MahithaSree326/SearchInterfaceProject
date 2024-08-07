@@ -1,0 +1,83 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffb6c1, #87ceeb); /* Pink to blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown styling */
+.dropdown select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #87ceeb; /* Light blue border */
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #ffb6c1; /* Light pink background */
+    outline: none;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.dropdown select:focus {
+    border-color: #4682b4; /* Darker blue border on focus */
+    transform: scale(1.05);
+}
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+/* Input field styling */
+.search-box input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #87ceeb; /* Light blue border */
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 300px;
+    background-color: #ffb6c1; /* Light pink background */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-box input[type="text"]:focus {
+    border-color: #4682b4; /* Darker blue border on focus */
+    box-shadow: 0 0 10px rgba(70, 130, 180, 0.2); /* Blue glow on focus */
+}
+
+/* Button styling */
+.search-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #87ceeb; /* Light blue background */
+    color: #fff; /* White text color */
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #4682b4; /* Darker blue on hover */
+    transform: scale(1.05);
+}
